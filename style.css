@@ -1,0 +1,137 @@
+:root{
+    --deep-navy: #07152F;
+    --dark-charcoal:#171923;
+    --electric-blue:#087BFF;
+    --ice-blue:#69CFFF;
+    --snow:#FFFFFF;
+    --steel-gray:#AEB9C9;
+}
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+    
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;  
+}
+
+.body-login{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background: var(--deep-navy);
+    color: var(--dark-charcoal);
+}
+.login{
+    width: 60rem;
+    background:#fff;
+    color:var(--dark-charcoal);
+    border-radius: 1rem;
+    padding: 6rem 5rem;
+    border: .2rem solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login img{
+    width: 15rem;
+    margin-bottom: 1rem;
+}  
+.login h1{
+    margin-bottom: 1rem;
+    color: var(--dark-charcoal);
+}
+.input-box{
+    margin-right: 2.5rem;
+}
+.login .input-box .top-n{
+    font-size: 1.9rem;
+    color:var(--dark-charcoal);
+}
+
+.login .input-box input{
+    width: 100%;
+    border: .2rem solid rgba(0, 0, 0, 0.1);
+    border-radius: .5rem    ;
+    font-size: 1.8rem;
+    color: var(--dark-charcoal);
+    padding: 1.5rem; 
+    margin: 1.5rem;
+   
+}
+.login .input-box input:focus{
+    border-color: var(--electric-blue);
+}
+
+ .btn{
+    margin-top: 3rem;
+    width: 20rem;
+    padding: 1.8rem; 
+    font-size: 1.8rem;
+
+    background-color:  #056de5;
+    border-radius: 1.5rem;
+    color: var(--snow);
+    cursor: pointer;
+}
+.btn:hover{
+    background:var(--electric-blue) ;
+}
+.extra-link {
+    cursor: pointer;
+    color: #333;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+}
+
+.extra-link a:hover{
+    text-decoration: underline;
+}
+
+/*mobile*/
+@media (max-width: 767px){
+    .login{
+        width: 90%;
+        padding: 3rem 2rem;
+    }
+    .login img{
+        width: 10rem;
+    }
+    .login .btn{
+        width: 100%;
+    }
+}
+
+/*tab*/
+@media (min-width: 768px) and (max-width: 1023px){
+    
+    .login{
+        width: 60%;
+    }
+    .login .btn{
+        width: 100%;
+    }
+}
+
+/* laptop*/
+@media (min-width: 1024px) and (max-width: 1279px){
+    .login{
+        width: 50%;
+        padding: 3rem 2rem;
+    }
+    .login .btn{
+        width: 100%;
+    }
+}
+
+
+
