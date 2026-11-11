@@ -15,9 +15,6 @@
     if($password === $password2){
         $stmt = $conn->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
         $stmt->bind_param('ss', $uname, $password);
-        $stmt->execute();
-    
-        /*$result = $stmt->get_result(); use in retrieving rows in SELECT QUERY*/
 
      if($stmt->execute()){
         $mess[] = "Registed successfully. Please wait for admin approval of your account.";
